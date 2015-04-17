@@ -15,10 +15,10 @@ namespace Assignment07
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
+            this.ProgammersNameLabel.Text = "Mohamad Al-Jaf";
+            this.VersionLabel.Text = String.Format("Version {0}", AssemblyVersion);
+            this.WebsiteLabel.Text = "www.moviebonanza.com";
+            this.ContactNumberLabel.Text = "1-800-bon-anaz";
             this.textBoxDescription.Text = AssemblyDescription;
         }
 

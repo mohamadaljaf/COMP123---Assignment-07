@@ -143,6 +143,16 @@ namespace Assignment07.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap monkey_eating_popcorn {
+            get {
+                object obj = ResourceManager.GetObject("monkey-eating-popcorn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nostringsattached {
             get {
                 object obj = ResourceManager.GetObject("nostringsattached", resourceCulture);

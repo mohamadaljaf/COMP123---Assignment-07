@@ -30,7 +30,6 @@
         {
             this.NextButton = new System.Windows.Forms.Button();
             this.SelectionGroupBox = new System.Windows.Forms.GroupBox();
-            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.CostLabel = new System.Windows.Forms.Label();
             this.MovieCostTextBox = new System.Windows.Forms.TextBox();
             this.MovieCategoryTextBox = new System.Windows.Forms.TextBox();
@@ -39,6 +38,7 @@
             this.TitleLabel = new System.Windows.Forms.Label();
             this.MovieComboBox = new System.Windows.Forms.ComboBox();
             this.CurrentMoviesLabel = new System.Windows.Forms.Label();
+            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.SelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).BeginInit();
             this.SuspendLayout();
@@ -71,16 +71,6 @@
             this.SelectionGroupBox.TabIndex = 1;
             this.SelectionGroupBox.TabStop = false;
             this.SelectionGroupBox.Text = "Your Selection";
-            // 
-            // MoviePictureBox
-            // 
-            this.MoviePictureBox.BackColor = System.Drawing.Color.White;
-            this.MoviePictureBox.Location = new System.Drawing.Point(15, 22);
-            this.MoviePictureBox.Name = "MoviePictureBox";
-            this.MoviePictureBox.Size = new System.Drawing.Size(132, 141);
-            this.MoviePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MoviePictureBox.TabIndex = 6;
-            this.MoviePictureBox.TabStop = false;
             // 
             // CostLabel
             // 
@@ -164,10 +154,21 @@
             this.CurrentMoviesLabel.Text = "Current Movies";
             this.CurrentMoviesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // MoviePictureBox
+            // 
+            this.MoviePictureBox.BackColor = System.Drawing.Color.White;
+            this.MoviePictureBox.Location = new System.Drawing.Point(15, 22);
+            this.MoviePictureBox.Name = "MoviePictureBox";
+            this.MoviePictureBox.Size = new System.Drawing.Size(132, 141);
+            this.MoviePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MoviePictureBox.TabIndex = 6;
+            this.MoviePictureBox.TabStop = false;
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(656, 307);
             this.ControlBox = false;
             this.Controls.Add(this.CurrentMoviesLabel);
@@ -179,7 +180,7 @@
             this.Name = "SelectionForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Selection Form";
+            this.Text = "Movie Bonanza - Your online streaming service";
             this.SelectionGroupBox.ResumeLayout(false);
             this.SelectionGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).EndInit();
