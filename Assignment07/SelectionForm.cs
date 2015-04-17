@@ -12,13 +12,11 @@ namespace Assignment07
 {
     public partial class SelectionForm : Form
     {
-        //PUBLIC INSTANCE VARIABLES ***************************************
-        public List<Movie> Movies = new List<Movie>();
-
         //PRIVATE INSTANCE VARIABLES ***************************************
+        private List<Movie> Movies = new List<Movie>();
         int _movieIndex;
 
-        //CONSTRUCTOR ***************************************************
+        //CONSTRUCTORS ***************************************************
         public SelectionForm()
         {
             InitializeComponent();
@@ -29,7 +27,8 @@ namespace Assignment07
         // Overloaded constructor that calls the default constructor. Is used for when the user hits the back button in OrderForm
         public SelectionForm(Movie selectedMovie) : this()
         {
-            this._movieIndex = Movies.IndexOf(selectedMovie);
+            this._movieIndex = Movies.FindIndex(i => i.Title.Equals(selectedMovie.Title)); //finds the index of the selected movie from the list
+            MovieComboBox.SelectedIndex = this._movieIndex; //selects the movie in the ComboBox
         }
 
         // PRIVATE METHODS ***************************************************

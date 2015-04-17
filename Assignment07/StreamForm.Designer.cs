@@ -30,8 +30,8 @@
         {
             this.OKButton = new System.Windows.Forms.Button();
             this.ThankYouLabel = new System.Windows.Forms.Label();
-            this.ChargedLabel = new System.Windows.Forms.Label();
-            this.MovieLabel = new System.Windows.Forms.Label();
+            this.GrandTotalLabel = new System.Windows.Forms.Label();
+            this.MovieTitleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // OKButton
@@ -42,6 +42,7 @@
             this.OKButton.TabIndex = 0;
             this.OKButton.Text = "OK";
             this.OKButton.UseVisualStyleBackColor = true;
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // ThankYouLabel
             // 
@@ -54,29 +55,29 @@
             this.ThankYouLabel.Text = "Thank you for choosing Movie Bonanza!";
             this.ThankYouLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ChargedLabel
+            // GrandTotalLabel
             // 
-            this.ChargedLabel.BackColor = System.Drawing.Color.Black;
-            this.ChargedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChargedLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.ChargedLabel.Location = new System.Drawing.Point(13, 39);
-            this.ChargedLabel.Name = "ChargedLabel";
-            this.ChargedLabel.Size = new System.Drawing.Size(348, 24);
-            this.ChargedLabel.TabIndex = 2;
-            this.ChargedLabel.Text = "Your Credit Card will be charged [X dollars]";
-            this.ChargedLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.GrandTotalLabel.BackColor = System.Drawing.Color.Black;
+            this.GrandTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrandTotalLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.GrandTotalLabel.Location = new System.Drawing.Point(13, 39);
+            this.GrandTotalLabel.Name = "GrandTotalLabel";
+            this.GrandTotalLabel.Size = new System.Drawing.Size(348, 24);
+            this.GrandTotalLabel.TabIndex = 2;
+            this.GrandTotalLabel.Text = "Your Credit Card will be charged [X dollars]";
+            this.GrandTotalLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // MovieLabel
+            // MovieTitleLabel
             // 
-            this.MovieLabel.BackColor = System.Drawing.Color.Black;
-            this.MovieLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MovieLabel.ForeColor = System.Drawing.Color.Cyan;
-            this.MovieLabel.Location = new System.Drawing.Point(13, 63);
-            this.MovieLabel.Name = "MovieLabel";
-            this.MovieLabel.Size = new System.Drawing.Size(348, 21);
-            this.MovieLabel.TabIndex = 3;
-            this.MovieLabel.Text = "[Your Movie] will begin streaming shortly";
-            this.MovieLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.MovieTitleLabel.BackColor = System.Drawing.Color.Black;
+            this.MovieTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MovieTitleLabel.ForeColor = System.Drawing.Color.Cyan;
+            this.MovieTitleLabel.Location = new System.Drawing.Point(13, 63);
+            this.MovieTitleLabel.Name = "MovieTitleLabel";
+            this.MovieTitleLabel.Size = new System.Drawing.Size(348, 21);
+            this.MovieTitleLabel.TabIndex = 3;
+            this.MovieTitleLabel.Text = "[Your Movie] will begin streaming shortly";
+            this.MovieTitleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // StreamForm
             // 
@@ -86,8 +87,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(373, 367);
             this.ControlBox = false;
-            this.Controls.Add(this.MovieLabel);
-            this.Controls.Add(this.ChargedLabel);
+            this.Controls.Add(this.MovieTitleLabel);
+            this.Controls.Add(this.GrandTotalLabel);
             this.Controls.Add(this.ThankYouLabel);
             this.Controls.Add(this.OKButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,7 +107,7 @@
 
         private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.Label ThankYouLabel;
-        private System.Windows.Forms.Label ChargedLabel;
-        private System.Windows.Forms.Label MovieLabel;
+        private System.Windows.Forms.Label GrandTotalLabel;
+        private System.Windows.Forms.Label MovieTitleLabel;
     }
 }

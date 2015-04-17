@@ -12,11 +12,12 @@ namespace Assignment07
 {
     public partial class OrderForm : Form
     {
-        //private instance variables
+        //PRIVATE INSTANCE VARIABLES ***************************************
         private Movie _selectedMovie;
         private double _cost, _subTotal, _salesTax, _grandTotal;
-        private const double _orderDVDCost = 10.00; // constant double cost of order dvd
+        private const double _orderDVDCost = 10.00; // double constant - cost of ordering a dvd
 
+        //CONSTRUCTOR ***************************************************
         public OrderForm(Movie selectedMovie)
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace Assignment07
             CalculateCost();
         }
 
+        // PRIVATE METHODS ***************************************************
         // Calculates the cost of the movie and displays it onto the textboxes
         private void CalculateCost()
         {
@@ -77,13 +79,14 @@ namespace Assignment07
         // Loads the streamForm and hides this form
         private void StreamButton_Click(object sender, EventArgs e)
         {
-            StreamForm streamForm = new StreamForm();
+            StreamForm streamForm = new StreamForm(this._grandTotal, this._selectedMovie.Title);
 
             this.Hide();
             streamForm.Owner = this;
             streamForm.Show();
         }
 
+        // shows the about box
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutBox().ShowDialog();
@@ -93,6 +96,12 @@ namespace Assignment07
         private void OrderDVDCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             this.CalculateCost();
+        }
+
+        // print previews the form
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            printForm1.Print();
         }
     }
 }

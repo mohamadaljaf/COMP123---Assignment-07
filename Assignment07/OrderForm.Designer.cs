@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +59,7 @@
             this.OrderDVDCheckBox = new System.Windows.Forms.CheckBox();
             this.SeparatorLabel = new System.Windows.Forms.Label();
             this.MoviePictureBox = new System.Windows.Forms.PictureBox();
+            this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             this.MainMenuStrip.SuspendLayout();
             this.MovieSelectedGroupBox.SuspendLayout();
             this.OrderGroupBox.SuspendLayout();
@@ -88,8 +91,9 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // streamToolStripMenuItem
             // 
@@ -360,6 +364,14 @@
             this.MoviePictureBox.TabIndex = 4;
             this.MoviePictureBox.TabStop = false;
             // 
+            // printForm1
+            // 
+            this.printForm1.DocumentName = "document";
+            this.printForm1.Form = this;
+            this.printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter;
+            this.printForm1.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("printForm1.PrinterSettings")));
+            this.printForm1.PrintFileName = null;
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -424,5 +436,6 @@
         private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.Button BackButton;
+        private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm printForm1;
     }
 }

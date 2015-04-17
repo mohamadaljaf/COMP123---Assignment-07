@@ -43,6 +43,7 @@ namespace Assignment07
             this.CategoryCost(); //gets the cost of the movie based on the category
         }
 
+        // PRIVATE METHODS ***************************************************
         // assigns a cost based on the category of the movie
         private void CategoryCost()
         {
@@ -67,7 +68,7 @@ namespace Assignment07
             }
         }
 
-        // PUBLIC METHODS
+        // PUBLIC METHODS ***************************************************
         // Default comparer for Movie type - compares the title property
         public int CompareTo(Movie compareMovie)
         {
