@@ -30,6 +30,7 @@
         {
             this.NextButton = new System.Windows.Forms.Button();
             this.SelectionGroupBox = new System.Windows.Forms.GroupBox();
+            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.CostLabel = new System.Windows.Forms.Label();
             this.MovieCostTextBox = new System.Windows.Forms.TextBox();
             this.MovieCategoryTextBox = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.TitleLabel = new System.Windows.Forms.Label();
             this.MovieComboBox = new System.Windows.Forms.ComboBox();
             this.CurrentMoviesLabel = new System.Windows.Forms.Label();
-            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
             this.SelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,16 @@
             this.SelectionGroupBox.TabIndex = 1;
             this.SelectionGroupBox.TabStop = false;
             this.SelectionGroupBox.Text = "Your Selection";
+            // 
+            // MoviePictureBox
+            // 
+            this.MoviePictureBox.BackColor = System.Drawing.Color.White;
+            this.MoviePictureBox.Location = new System.Drawing.Point(15, 22);
+            this.MoviePictureBox.Name = "MoviePictureBox";
+            this.MoviePictureBox.Size = new System.Drawing.Size(132, 141);
+            this.MoviePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MoviePictureBox.TabIndex = 6;
+            this.MoviePictureBox.TabStop = false;
             // 
             // CostLabel
             // 
@@ -139,7 +149,7 @@
             this.MovieComboBox.FormattingEnabled = true;
             this.MovieComboBox.Location = new System.Drawing.Point(12, 39);
             this.MovieComboBox.Name = "MovieComboBox";
-            this.MovieComboBox.Size = new System.Drawing.Size(172, 261);
+            this.MovieComboBox.Size = new System.Drawing.Size(172, 260);
             this.MovieComboBox.Sorted = true;
             this.MovieComboBox.TabIndex = 0;
             this.MovieComboBox.SelectedIndexChanged += new System.EventHandler(this.MovieListComboBox_SelectedIndexChanged);
@@ -153,16 +163,6 @@
             this.CurrentMoviesLabel.TabIndex = 2;
             this.CurrentMoviesLabel.Text = "Current Movies";
             this.CurrentMoviesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // MoviePictureBox
-            // 
-            this.MoviePictureBox.BackColor = System.Drawing.Color.White;
-            this.MoviePictureBox.Location = new System.Drawing.Point(15, 22);
-            this.MoviePictureBox.Name = "MoviePictureBox";
-            this.MoviePictureBox.Size = new System.Drawing.Size(132, 141);
-            this.MoviePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MoviePictureBox.TabIndex = 6;
-            this.MoviePictureBox.TabStop = false;
             // 
             // SelectionForm
             // 
